@@ -1,0 +1,46 @@
+{
+  "name": "express-vue-bootstrap-webpack",
+  "version": "1.0.0",
+  "description": "Seed for a Node.js web app based on Express with Vue.js and Bootstrap3 webpacked.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niabb/express-vue-bootstrap-webpack.git"
+  },
+  "keywords": [
+    "vue",
+    "express",
+    "webpack",
+    "bootstrap"
+  ],
+  "author": "Nicolas Abbal <nicolas.abbal@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niabb/express-vue-bootstrap-webpack/issues"
+  },
+  "homepage": "https://github.com/niabb/express-vue-bootstrap-webpack#readme",
+  "scripts": {
+    "start": "mkdir -p log && node ./bin/www",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "~1.4.3",
+    "debug": "^2.6.0",
+    "express": "^4.14.1",
+    "http-auth": "^3.1.1",
+    "jquery": "^3.1.1",
+    "log": "^1.4.0",
+    "pug": "^2.0.0-beta11",
+    "serve-favicon": "~2.3.0",
+    "vue": "^2.1.10",
+    "vue-resource": "^1.2.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.10.0",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1"
+  }
+}
