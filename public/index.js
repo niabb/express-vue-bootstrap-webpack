@@ -7,6 +7,7 @@ import TestComponent1 from '../views/components/testComponent1.vue'
 import TestComponent2 from '../views/components/testComponent2.vue'
 
 import 'bootstrap/dist/css/bootstrap.css';
+import './css/global.css';
 
 new Vue({
   el: '#testComponent1',
