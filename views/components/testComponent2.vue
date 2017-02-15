@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div.well
     h2 Component2
     p
       | This is a second Vue component.
