@@ -8,10 +8,21 @@
 </template>
 
 <script>
-  export default {
-    data () {
+  module.exports = {
+    data: function() {
       return {
         msg: 'Hello world!'
+      }
+    },
+    created: function() {
+      this.sendHello();
+    },
+    methods: {
+      sendHello: function () {
+        this.$http.get('/hello').then((response) => response.json()).then((json) => {
+          console.log(json);
+        }, (response) => {
+        });
       }
     }
   }

@@ -8,4 +8,8 @@ router.get('/', function(req, res/*, next*/) {
   res.render('index', {});
 });
 
+router.get('/hello', function(req, res) {
+  res.json({hello:"hello you!"});
+});
+
 module.exports = router;
