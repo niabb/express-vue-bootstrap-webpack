@@ -5,8 +5,8 @@ import _ from 'bootstrap';
 import Io from 'socket.io-client';
 
 
-import TestComponent1 from '../views/components/testComponent1.vue'
-import TestComponent2 from '../views/components/testComponent2.vue'
+import TestComponent1 from './components/testComponent1.vue'
+import TestComponent2 from './components/testComponent2.vue'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './css/global.css';
