@@ -1,4 +1,5 @@
 {
   "port" : "3000",
-  "logFile" : "./log/debug.log"
+  "logFile" : "./log/debug.log",
+  "authentication" : {"enabled": false, "user":"", "pass":"", "realm":""}
 }

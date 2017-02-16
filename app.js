@@ -6,6 +6,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 
+const config = require('./cfg/config.json');
 const index = require('./routes/index');
 const log = require('./lib/logger.js');
 
@@ -26,9 +27,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'dist')));
 
 
-// Uncomment these 2 lines if you want to enable basic HTTP authentication
-//const authenticator = require('./lib/authenticator.js');
-//app.use(authenticator('user', 'pass', 'realm'));
+// Basic HTTP authentication can be enabled with config file.
+if(config.authentication && config.authentication.enabled) {
+  const authenticator = require('./lib/authenticator.js');
+  app.use(authenticator(config.authentication.user, config.authentication.pass, config.authentication.realm));
+}
 
 app.use('/', index);
 
