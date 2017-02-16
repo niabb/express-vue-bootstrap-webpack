@@ -4,9 +4,12 @@ const path = require('path');
 const webpack = require("webpack");
 
 module.exports = {
-  entry: './public/index.js',
+  entry: {
+    main:'./public/index.js', 
+    css:'./public/css.js'
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name]-bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
