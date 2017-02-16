@@ -15,7 +15,9 @@
       }
     },
     created: function() {
+      window.io.emit('test', {});
       this.sendHello();
+
     },
     methods: {
       sendHello: function () {
