@@ -5,6 +5,7 @@ const path = require('path');
 //const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 
 const config = require('./cfg/config.json');
 const index = require('./routes/index');
@@ -13,6 +14,8 @@ const log = require('./lib/logger.js');
 const app = express();
 
 log.info('Starting Application!');
+
+app.use(compression()); // Enable Gzip compression
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
