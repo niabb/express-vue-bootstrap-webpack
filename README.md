@@ -17,3 +17,14 @@ git pull https://github.com/niabb/express-vue-bootstrap-webpack.git master
 git push
 ```
 
+## Create a fork of this repository
+```
+git clone https://github.com/niabb/express-vue-bootstrap-webpack.git newRepo
+cd newRepo
+git remote set-url origin https://github.com/userName/newRepo
+git remote add upstream https://github.com/niabb/express-vue-bootstrap-webpack
+git push origin master
+git push --all
+```
+
+
